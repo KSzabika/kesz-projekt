@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K-Sushi - Bejelentkezés / Regisztráció</title>
+  <link rel="stylesheet" href="bej-reg.css">
+</head>
+<body>
+
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">K-Sushi 🍣</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Főoldal</a></li>
+          <li><a href="menu.html">Menü</a></li>
+          <li><a href="kosar.html">Kosár</a></li>
+          <li><a href="#">Kapcsolat</a></li>
+          <li><a href="bejelentkezes.html">Bejelentkezés</a></li>
+          <li><a href="regisztracio.html">Regisztráció</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="auth-container">
+      <h2>Regisztráció</h2>
+
+      <form action="#" method="POST" class="auth-form">
+
+        <div class="input-group">
+          <label for="lastname">Vezetéknév</label>
+          <input type="text" id="lastname" name="lastname">
+        </div>
+
+        <div class="input-group">
+          <label for="firstname">Keresztnév</label>
+          <input type="text" id="firstname" name="firstname">
+        </div>
+
+        <div class="input-group">
+          <label for="new-email">Email cím</label>
+          <input type="email" id="new-email" name="new-email">
+        </div>
+
+        <div class="input-group">
+          <label for="phone">Telefonszám</label>
+          <input type="tel" id="phone" name="phone" >
+        </div>
+
+        <div class="input-group">
+          <label for="address">Szállítási cím</label>
+          <input type="text" id="address" name="address">
+        </div>
+
+        <div class="input-group">
+          <label for="new-password">Jelszó</label>
+          <input type="password" id="new-password" name="new-password">
+        </div>
+
+        <div class="input-group">
+          <label for="confirm-password">Jelszó megerősítése</label>
+          <input type="password" id="confirm-password" name="confirm-password">
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn red">Regisztráció</button>
+          <p>Ha már van fiókod, <a href="bejelentkezes.html">jelentkezz be itt</a>.</p>
+        </div>
+
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      <p style="text-align: center;">📧 Elérhetőség:</p>
+      <p>E-mail: Szabolcsfakksmite@gmail.com</p>
+      <p>Tel: 06301234567</p>
+    </div>
+  </footer>
+
+  <script src="regisztracio.js"></script>
+
+</body>
+</html>

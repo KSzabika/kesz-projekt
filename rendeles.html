@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K-Sushi - Rendelés leadása</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <header>
+    <div class="container header-container">
+      <h1 class="logo">K-Sushi 🍣</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Főoldal</a></li>
+          <li><a href="menu.html">Menü</a></li>
+          <li><a href="kosar.html">Kosár</a></li>
+          <li><a href="#">Kapcsolat</a></li>
+          <li><a href="bejelentkezes.html">Bejelentkezés</a></li>
+          <li><a href="regisztracio.html">Regisztráció</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+<main class="container">
+  <section class="rendeles">
+    <h2>Rendelés leadása</h2>
+
+    <div class="rendeles-osszegzes">
+      <h3>Kosár tartalma</h3>
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Termék</th>
+            <th>Mennyiség</th>
+            <th>Ár</th>
+          </tr>
+        </thead>
+        <tbody id="rendeles-tetelek"></tbody>
+      </table>
+      <p><strong>Végösszeg:</strong> <span id="rendeles-osszeg">0 Ft</span></p>
+    </div>
+
+    <form id="rendeles-form" class="rendeles-form">
+      <h3>Szállítási adatok</h3>
+
+      <label for="nev">Név *</label>
+      <input type="text" id="nev" name="nev" required>
+
+      <label for="telefonszam">Telefonszám *</label>
+      <input type="tel" id="telefonszam" name="telefonszam" required>
+
+      <label for="cim">Szállítási cím *</label>
+      <textarea id="cim" name="cim" rows="3" required></textarea>
+
+      <label for="megjegyzes">Megjegyzés a rendeléshez</label>
+      <textarea id="megjegyzes" name="megjegyzes" rows="3"></textarea>
+
+      <div class="fizetesi-mod">
+        <h4>Fizetési mód</h4>
+        <label><input type="radio" name="fizetes" value="keszpenz" checked> Készpénz házhozszállításkor</label>
+      </div>
+
+      <button type="submit" class="btn pink large">Rendelés véglegesítése</button>
+    </form>
+  </section>
+</main>
+
+ <footer>
+    <div class="container footer-container">
+      <p style="text-align: center;">📧 Elérhetőség:</p>
+      <p>E-mail: Szabolcsfakksmite@gmail.com</p>
+      <p>Tel: 06301234567</p>
+    </div>
+  </footer>
+
+<script src="rendeles.js"></script>
+</body>
+</html>

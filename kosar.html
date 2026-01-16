@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K-Sushi - Kosár</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container header-container">
+    <h1 class="logo">K-Sushi 🍣</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Főoldal</a></li>
+        <li><a href="menu.html">Menü</a></li>
+        <li><a href="kosar.html">Kosár</a></li>
+        <li><a href="#">Kapcsolat</a></li>
+        <li><a href="bejelentkezes.html">Bejelentkezés</a></li>
+        <li><a href="regisztracio.html">Regisztráció</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="cart">
+    <h2>Kosár tartalma</h2>
+
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Termék</th>
+          <th>Mennyiség</th>
+          <th>Ár</th>
+          <th>Eltávolítás</th>
+        </tr>
+      </thead>
+      <tbody id="cart-body"></tbody>
+    </table>
+
+    <div class="cart-summary">
+      <p><strong>Végösszeg:</strong> <span id="total">0 Ft</span></p>
+      <button id="tovabb-rendeles" class="btn pink">Tovább a rendeléshez</button>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-container">
+    <p style="text-align: center;">📧 Elérhetőség:</p>
+    <p>E-mail: Szabolcsfakksmite@gmail.com</p>
+    <p>Tel: 06301234567</p>
+  </div>
+</footer>
+
+<script src="kosar.js"></script>
+</body>
+</html>
